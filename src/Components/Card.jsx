@@ -58,10 +58,16 @@ export const CardItem = ({ data, key }) => {
           <Typography
             component="div"
             variant="h6"
-            sx={{ fontWeight: "bold", color: "#fff" }}
-            className={"p-4 rounded-full" +color}
+            sx={{
+              fontWeight: "bold",
+              color: "#fff",
+              textTransform: "uppercase",
+              bgcolor: "#9CDBA6",
+              borderRadius: "50%",
+            }}
+            className={"p-4 rounded-full" + color}
           >
-            {data.customer.charAt(0)}
+            {data.customer.charAt(0) + data.customer.charAt(1)}
           </Typography>
         </Box>
       </Box>
